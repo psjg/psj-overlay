@@ -3,7 +3,7 @@
 <pkgmetadata>
   <maintainer type="person">
     <email>dontmailme@example.com</email>
-    <n>psj</n>
+    <name>psj</name>
   </maintainer>
   <longdescription>
     ForgeCode is a model-agnostic AI coding agent for the terminal. It supports models via OpenRouter or direct API keys. It is Zsh-native, using a colon prefix to send prompts without leaving the shell. It ships three built-in agents: forge (code editing), sage (read-only research), and muse (planning). Context indexing uses function signatures and module boundaries rather than raw file dumps, reducing context size significantly. The hosted indexing service is optional and not required for basic use.

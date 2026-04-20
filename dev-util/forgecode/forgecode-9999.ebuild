@@ -51,9 +51,8 @@ src_install() {
 
 	# install env.d file to disable telemetry unless the use flag is set
 	if ! use telemetry; then
-		insinto /etc/env.d
 		echo "FORGE_TRACKER=false" > "${T}/99forgecode"
-		doins "${T}/99forgecode"
+		doenvd "${T}/99forgecode"
 	fi
 }
 
