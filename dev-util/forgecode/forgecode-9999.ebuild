@@ -46,6 +46,10 @@ src_unpack() {
 	cargo_live_src_unpack
 }
 
+src_compile() {
+    APP_VERSION="${EGIT_VERSION:-9999}" cargo_src_compile
+}
+
 src_install() {
 	cargo_src_install --path crates/forge_main
 
